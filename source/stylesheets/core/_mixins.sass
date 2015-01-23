@@ -31,6 +31,10 @@
     left: $base-spacing-unit
     margin-right: -50%
 
+  +breakpoint($breakpoint-mobile)
+    &:after
+      display: none
+
 @mixin triangle($direction, $size: $base-spacing-unit, $background-color: $object-background)
   $height: $size
   $width: round($height * 0.6)
