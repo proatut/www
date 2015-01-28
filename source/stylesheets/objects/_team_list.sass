@@ -1,0 +1,14 @@
+.team-list
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: flex-start
+  +breakpoint($breakpoint-mobile)
+    display: block
+
+.team-list__item
+  margin-left: $quarter-spacing-unit
+  margin-right: $quarter-spacing-unit
+  +breakpoint($breakpoint-mobile)
+    display: block
